@@ -1,0 +1,6 @@
+./index.html
+	Lang is not "nl"
+./html/Products.html
+	Lang is not "nl"
+./html/Mega-Yellow-Smiley-Details.html
+	Lang is not "nl"

@@ -7,7 +7,7 @@
 <body>
 <header>
   <h1>TKNO</h1>
-  <a href="../index.html"><img src="/media/TKNO%20Logo.png" alt="TKNO logo"></a>
+  <a href="../index.html"><img src="../media/TKNO%20Logo.png" alt="TKNO logo"></a>
   <nav>
     <h2>Menu</h2>
     <ul>
@@ -20,47 +20,69 @@
   </nav>
 </header>
 <main>
-  <!-- insert filter-->
-  <section>
-    <h2>T-shirts</h2>
-    <!-- optie ul - li - article - h3-->
-    <article>
-      <!-- insert img here + link to product detail -->
-      <h4>T-shirt 1</h4>
-      <p>price tag EUR</p>
-    </article>
-    <article>
-      <!-- insert img here + link to product detail-->
-      <h4>T-shirt 2 </h4>
-      <p>price tag EUR</p>
-    </article>
-  </section>
-  <section>
-    <h2>Sweatshirts</h2>
-    <article>
-      <!-- insert img here + link to product detail-->
-      <h4>Sweatshirt 1</h4>
-      <p>price tag EUR</p>
-    </article>
-    <article>
-      <!-- insert img here + link to product detail-->
-      <h4>Sweatshirt 2 </h4>
-      <p>price tag EUR</p>
-    </article>
-  </section>
-  <section>
-    <h2>Hoodies</h2>
-    <article>
-      <!-- insert img here + link to product detail-->
-      <h4>Hoodie 1</h4>
-      <p>price tag EUR</p>
-    </article>
-    <article>
-      <!-- insert img here + link to product detail-->
-      <h4>Hoodie 2 </h4>
-      <p>price tag EUR</p>
-    </article>
-  </section>
+  <article>
+    <h2>Products</h2>
+    <fieldset>
+      <label>
+        Colour
+        <select name="Colour">
+          <optgroup label="Colour">
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+          </optgroup>
+        </select>
+      </label>
+      <input type="submit" value="Show Results">
+    </fieldset>
+      <section>
+        <h3 id="T-shirts">T-shirts</h3>
+        <section>
+          <a href="../html/Mega-Yellow-Smiley-Details.html">
+            <img src="../media/T-shirt%201%20-%20Home.jpg" alt="man wearing black mega yellow smiley t-shirt from TKNO.">
+            <h4>Mega Yellow Smiley - T-shirt</h4>
+            <p>29.99 EUR</p>
+          </a>
+        </section>
+        <section>
+          <img src="../media/Out%20Of%20Your%20Head%20-%20T-shirt%201.jpg" alt="Out Of Your Head T-shirt from TKNO on coat rack.">
+          <!-- link to product detail-->
+          <h4>Out Of Your Head - T-shirt </h4>
+          <p>29.99 EUR</p>
+        </section>
+      </section>
+      <section>
+        <h3 id="Sweatshirts">Sweatshirts</h3>
+        <section>
+          <img src="../media/Sweatershirt%201%20-%20Home.jpg" alt="man wearing black Techno sweatshirt from TKNO.">
+          <!-- link to product detail-->
+          <h4>Techno Black - Sweatshirt</h4>
+          <p>59.99 EUR</p>
+        </section>
+        <section>
+          <img src="../media/Acid%20-%20Sweatshirt%201.jpg" alt="Acid sweatshirt from TKNO on coat rack.">
+          <!-- link to product detail-->
+          <h4>ACID - Sweatshirt </h4>
+          <p>59.99 EUR</p>
+        </section>
+      </section>
+      <section>
+        <h3 id="Hoodies">Hoodies</h3>
+        <section>
+          <img src="../media/Hoodie%201%20-%20Home.jpg" alt="man wearing Boris Brejcha Joker hoodie from TKNO.">
+          <!-- link to product detail-->
+          <h4>Boris Brejcha Joker - Hoodie</h4>
+          <p>69.99 EUR</p>
+        </section>
+        <section>
+          <img src="../media/Nice%20People%20Techno%20-%20Hoodie%201.jpg" alt="man wearing Nice People Techno Hoodie from TKNO.">
+          <!-- link to product detail-->
+          <h4>Nice People Techno - Hoodie </h4>
+          <p>69.99 EUR</p>
+        </section>
+      </section>
+  </article>
 </main>
 <footer>
   <ul>

@@ -1,6 +1,14 @@
 ./index.html
 	Lang is not "nl"
+./html/Out-Of-Your-Head-Details.html
+	Lang is not "nl"
+./html/Contact.html
+	Lang is not "nl"
 ./html/Products.html
 	Lang is not "nl"
+./html/Acid-T-Shirt-Details.html
+	Lang is not "nl"
 ./html/Mega-Yellow-Smiley-Details.html
+	Lang is not "nl"
+./html/FAQ.html
 	Lang is not "nl"

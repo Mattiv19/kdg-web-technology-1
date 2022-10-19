@@ -1,0 +1,38 @@
+/* insert color palette */
+
+/* algemene font */
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+/* titel algemene font sizes */
+
+
+/* Verbergen titels */
+.hiddenTitle{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
+}
+
+/* style hoofdmenu */
+#menu ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#menu .submenu{
+    display: none;
+}
+
+#menu ul li{
+    display: inline-block;
+}
+
+#menu li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}

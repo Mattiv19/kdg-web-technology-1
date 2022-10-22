@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <title>home TKNO</title>
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-<header>
-    <h1 class="hiddenTitle">TKNO</h1>
-        <a href="#"><img src="/media/TKNO%20Logo.png" alt="TKNO logo"></a>
+<body class="gridcontainer">
+<header class="gheader">
+    <h1 class="hiddenTitle" id="header">TKNO</h1>
+        <a id="logo" href="#"><img src="/media/TKNO%20Logo.png" alt="TKNO logo"></a>
     <nav id="menu">
         <h2 class="hiddenTitle">Menu</h2>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="html/Products.html">Products</a>
                 <ul class="submenu">
                     <li><a href="html/Products.html#T-shirts">T-shirts</a></li>
@@ -20,54 +21,54 @@
                     <li><a href="html/Products.html#Sweatshirts">Sweatshirts</a></li>
                 </ul>
             </li>
-            <li>Customization</li> <!-- add link-->
+            <li><a href="#">Customization</a></li> <!-- add link-->
             <li><a href="html/FAQ.html">FAQ</a></li>
             <li><a href="html/Contact.html">Contact</a></li>
         </ul>
+        <img class="banner" src="/media/Banner%201%20nologo.jpg" alt="2 DJs in a club wearing TKNO t-shirts.">
     </nav>
-    <img src="/media/Banner%201%20nologo.jpg" alt="2 DJs in a club wearing TKNO t-shirts.">
 </header>
-<main>
-    <section>
+<main class="gmain">
+    <section class="intro">
         <h2>TKNO - For The Love of Techno </h2>
             <p>
                 Imagine yourself at the latest Techno festival where everybody enjoys the same music regardless of where they come from. Music is what unites people from all over the world.
                 No matter who you are, with TKNO you can be yourself. You can dress it, style it, mix it like you want it. So wear it... for the love of techno.
             </p>
             <a href="html/Products.html"><img src="/media/T-shirt%201%20-%20Home.jpg" alt="man wearing black mega yellow smiley t-shirt from TKNO."></a>
-            <a href="html/Products.html"> <img src="/media/Hoodie%201%20-%20Home.jpg" alt="man wearing black hoodie from TKNO."></a>
+            <a href="html/Products.html"><img src="/media/Hoodie%201%20-%20Home.jpg" alt="man wearing black hoodie from TKNO."></a>
             <a href="html/Products.html"><img src="/media/Sweatershirt%201%20-%20Home.jpg" alt="man wearing black sweatshirt from TKNO."></a>
     </section>
-    <article>
-        <h2> About TKNO </h2>
-            <section>
-                <img src="/media/Who_am_i_mattiv_small.jpg" alt="DJ Mattiv playing at an indoor festival.">
+    <article class="abouttkno">
+        <h2 class="hiddenTitle"> About TKNO </h2>
+            <img src="/media/Who_am_i_mattiv_small.jpg" alt="DJ Mattiv playing at an indoor festival.">
+            <section class="aboutwho">
                 <h3> Who am I? </h3>
                     <p>
                         Hi! I’m Matthias Vermeiren, a 26-year-old guy from Belgium with a passion for electronic music. Since I was little, I listened to music any time I could. I even started making my own songs with a small loop library and learnt to play the keyboard. At the age of 13, I started DJing and played at some local clubs. Eventually I made professional electronic music with my laptop. Some of my songs went viral resulting in international performances in Europe. I will never forget the feeling of sharing music live with thousands of other people.
                     </p>
             </section>
-            <section>
+            <section class="aboutwhy">
                 <h3> Why TKNO? </h3>
                     <p>
                         TKNO clothing was created to share the passion for music with everybody. It is a way to express yourself and be part of the techno movement. Our designers make the most unique pieces for you to stand out from the crowd, meet new friends and create unforgettable memories.
                     </p>
-                <img src="/media/Why_TKNO_CarlCox.jpg" alt="2 DJs at a festival wearing TKNO clothing.">
             </section>
+            <img src="/media/Why_TKNO_CarlCox.jpg" alt="2 DJs at a festival wearing TKNO clothing.">
     </article>
 </main>
-<aside>
-    <h2>Testimonials</h2>
-        <section>
-            <h3>Review 1</h3>
+<aside class="testimonials gaside">
+    <h2 class="hiddenTitle">Testimonials</h2>
+        <section class="review">
+            <h3 class="hiddenTitle">Review 1</h3>
             <img src="/media/Pictogram%20testimonials.png" alt="pictogram logo">
             <blockquote>
                 <cite>Jamie F.</cite>
                     <p> Recently wore a TKNO t-shirt at a festival and got so many compliments! High quality stuff!</p>
             </blockquote>
         </section>
-        <section>
-            <h3>Review 2</h3>
+        <section class="review">
+            <h3 class="hiddenTitle">Review 2</h3>
             <img src="/media/Pictogram%20testimonials.png" alt="pictogram logo">
             <blockquote>
                 <cite> Daniel P.</cite>
@@ -75,8 +76,8 @@
                     with a beautiful design on top. I would 100% recommend!</p>
             </blockquote>
         </section>
-        <section>
-            <h3>Review 3</h3>
+        <section class="review">
+            <h3 class="hiddenTitle">Review 3</h3>
             <img src="/media/Pictogram%20testimonials.png" alt="pictogram logo">
             <blockquote>
                 <cite> Jeff G.</cite>
@@ -84,7 +85,8 @@
             </blockquote>
         </section>
 </aside>
-<footer>
+<footer class="footer gfooter" >
+    <section>
     <ul>
         <li>Shipping & Return Policy</li>
         <li>Size Guide</li>
@@ -97,6 +99,7 @@
         <li>Contact Us</li>
         <li>Social Media</li>
     </ul>
+    </section>
     &copy; TKNO 2022
 </footer>
 </body>

@@ -1,0 +1,26 @@
+/*grid*/
+.gheader {
+    grid-area: header;
+}
+.gmain {
+    grid-area: main;
+}
+.gfooter {
+    grid-area: footer;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.products > h2 section h3 section{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}

@@ -1,12 +1,33 @@
-/* insert color palette */
+:root {
+    /* CSS HEX */
+    --cultured: #f8f9faff;
+    --cultured-2: #e9ecefff;
+    --gainsboro: #dee2e6ff;
+    --light-gray: #ced4daff;
+    --cadet-blue-crayola: #adb5bdff;
+    --sonic-silver: #6c757dff;
+    --davys-grey: #495057ff;
+    --onyx: #343a40ff;
+    --eerie-black: #212529ff;
+    --canary: #fcff99ff;
+}
 
-/* algemene font */
+/* font */
 body{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
+    margin: auto;
 }
-/* titel algemene font sizes */
-
+/* titel font sizes */
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.3rem;
+}
 
 /* Verbergen titels */
 .hiddenTitle{
@@ -17,22 +38,45 @@ body{
     left: -10000px;
 }
 
+/* style logo*/
+#logo
+{
+    display: block;
+    text-align:center;
+    margin-top: 5px;
+    margin-bottom: -15px;
+
+}
 /* style hoofdmenu */
 #menu ul{
     list-style-type: none;
     padding-left: 0;
+    display: flex;
+    font-size: 1.2rem;
+    margin-bottom: 0;
 }
 
 #menu .submenu{
     display: none;
 }
-
 #menu ul li{
-    display: inline-block;
+    background-color: var(--eerie-black);
+    flex-grow: 1;
 }
-
-#menu li a{
+#menu li a {
     text-decoration: none;
+    color: var(--cultured);
     display: block;
     text-align: center;
+    padding: 12px;
+}
+
+/* hover menu */
+#menu ul li a:hover{
+    background-color: var(--davys-grey) ;
+}
+/* show current menu */
+#menu ul .active a{
+    background-color: var(--canary);
+    color: black;
 }

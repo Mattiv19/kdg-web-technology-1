@@ -73,10 +73,36 @@ h4 {
 
 /* hover menu */
 #menu ul li a:hover{
-    background-color: var(--davys-grey) ;
+    background-color: var(--canary);
+    color: var(--eerie-black);
 }
 /* show current menu */
 #menu ul .active a{
-    background-color: var(--canary);
-    color: black;
+    background-color: var(--davys-grey);
+}
+
+/* style footer */
+.footer{
+    display: block;
+    padding: 0 100px 20px 100px;
+    justify-content: center;
+    background: var(--eerie-black);
+    color: var(--cultured);
+    font-size: 0.8rem;
+}
+.footer section{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.0rem;
+}
+.footer ul{
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.footer ul li{
+    padding: 10px;
 }

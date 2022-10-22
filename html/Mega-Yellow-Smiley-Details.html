@@ -9,20 +9,19 @@
 <body>
 <header>
   <h1 class="hiddenTitle">TKNO</h1>
-  <a href="../index.html"><img src="../media/TKNO%20Logo.png" alt="TKNO logo"></a>
+  <a id="logo" href="../index.html"><img src="../media/TKNO%20Logo.png" alt="TKNO logo"></a>
   <nav id="menu">
     <h2 class="hiddenTitle">Menu</h2>
     <ul>
       <li><a href="../index.html">Home</a></li>
-      <li>
-        <a href="Products.html">Products</a>
+      <li class="active"><a href="Products.html">Products</a>
         <ul class="submenu">
           <li><a href="Products.html#T-shirts">T-shirts</a></li>
           <li><a href="Products.html#Hoodies">Hoodies</a></li>
           <li><a href="Products.html#Sweatshirts">Sweatshirts</a></li>
         </ul>
       </li>
-      <li>Customization</li> <!-- add link-->
+      <li><a href="#">Customization</a></li> <!-- add link-->
       <li><a href="FAQ.html">FAQ</a></li>
       <li><a href="Contact.html">Contact</a></li>
     </ul>
@@ -31,7 +30,7 @@
 <main>
   <aside>
     <h2 class="hiddenTitle">Breadcrumb Menu</h2>
-    <ol>
+    <ol id="breadcrumb">
       <li>
         <a href="../index.html">Home</a>
       </li>
@@ -42,7 +41,7 @@
         <a href="../html/Products.html#T-shirts">T-shirts</a>
       </li>
       <li>
-        <a href="../html/Mega-Yellow-Smiley-Details.html">Mega Yellow Smiley - T-shirt</a>
+        <a id="currentp" href="../html/Mega-Yellow-Smiley-Details.html">Mega Yellow Smiley - T-shirt</a>
       </li>
     </ol>
   </aside>
@@ -124,7 +123,8 @@
     </section>
   </article>
 </main>
-<footer>
+<footer class="footer">
+  <section>
   <ul>
     <li>Shipping & Return Policy</li>
     <li>Size Guide</li>
@@ -137,6 +137,7 @@
     <li>Contact Us</li>
     <li>Social Media</li>
   </ul>
+  </section>
   &copy; TKNO 2022
 </footer>
 </body>

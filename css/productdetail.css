@@ -18,3 +18,32 @@
     "main main"
     "footer footer";
 }
+
+/* styling breadcrumb menu */
+#breadcrumb{
+    list-style-type: none;
+    display: flex;
+}
+#breadcrumb li a{
+    display: flex;
+    text-decoration: none;
+    color: var(--eerie-black);
+    padding: 10px;
+}
+/* to fix
+#breadcrumb a:after{
+
+    content:'>';
+    text-align: center;
+    padding-left:15px;
+} */
+/* hover breadcrumb */
+#breadcrumb li a:hover{
+    color: var(--sonic-silver);
+    text-decoration: underline;
+}
+
+/*current breadcrumb page*/
+#breadcrumb li #currentp{
+    color: var(--sonic-silver)
+}

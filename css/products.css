@@ -19,8 +19,27 @@
     "footer";
 }
 
-.products > h2 section h3 section{
+.tshirts{
     display: flex;
-    flex-direction: row-reverse;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
 }
+.tshirts > p{
+    text-decoration: none;
+    color: var(--eerie-black);
+}
+
+.hoodies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+.sweatshirts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+

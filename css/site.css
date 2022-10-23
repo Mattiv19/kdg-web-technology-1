@@ -12,13 +12,39 @@
     --canary: #fcff99ff;
 }
 
+/* grid */
+.gheader {
+    grid-area: header;
+}
+.gmain {
+    grid-area: main;
+}
+.gaside {
+    grid-area: aside;
+}
+.gfooter {
+    grid-area: footer;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+}
+
 /* font */
 body{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     margin: auto;
 }
-/* titel font sizes */
+
+/* title font sizes */
 h2 {
     font-size: 2rem;
 }
@@ -26,10 +52,10 @@ h3 {
     font-size: 1.5rem;
 }
 h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
-/* Verbergen titels */
+/* Hide titles */
 .hiddenTitle{
     position: absolute;
     width: 1px;
@@ -47,7 +73,7 @@ h4 {
     margin-bottom: -15px;
 
 }
-/* style hoofdmenu */
+/* style menu */
 #menu ul{
     list-style-type: none;
     padding-left: 0;
@@ -55,7 +81,6 @@ h4 {
     font-size: 1.2rem;
     margin-bottom: 0;
 }
-
 #menu .submenu{
     display: none;
 }

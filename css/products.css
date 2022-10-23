@@ -1,45 +1,66 @@
-/*grid*/
-.gheader {
-    grid-area: header;
-}
-.gmain {
-    grid-area: main;
-}
-.gfooter {
-    grid-area: footer;
-}
-
-.gridcontainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
+/* flexbox products */
+.products{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 200px;
+    padding-right: 150px;
+    background:var(--cultured-2) ;
 }
 
+/* styling category titles */
+h3 {
+    flex: 0 0 100%;
+    padding-left: 50px;
+    font-size: 2rem;
+}
+
+/* flexbox tshirts */
 .tshirts{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px;
-}
-.tshirts > p{
-    text-decoration: none;
-    color: var(--eerie-black);
+    padding: 30px;
 }
 
+/* flexbox hoodies */
 .hoodies{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px;
+    padding: 30px;
 }
+
+/* flexbox sweatshirts*/
 .sweatshirts{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px;
+    padding: 30px;
 }
 
+/* styling single product */
+.singleproduct{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px 20px 50px;
+    text-decoration: none;
+}
+
+/* styling product text */
+.singleproduct a{
+    text-decoration: none;
+    color: var(--eerie-black);
+}
+.singleproduct p{
+    margin-top: -10px;
+}
+
+/* drop shadow images */
+.singleproduct img{
+    filter: drop-shadow(5px 10px 10px var(--gainsboro));
+}
+
+/* styling filter */
+.filter ul{
+    list-style-type: none;
+    display: flex;
+    padding: 30px 0 0 80px;
+}

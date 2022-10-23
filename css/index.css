@@ -1,28 +1,3 @@
-/* grid */
-.gheader {
-    grid-area: header;
-}
-.gmain {
-    grid-area: main;
-}
-.gaside {
-    grid-area: aside;
-}
-.gfooter {
-    grid-area: footer;
-}
-
-.gridcontainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "header"
-    "main"
-    "aside"
-    "footer";
-}
-
 /* responsive banner */
 .banner{
     width: 100%
@@ -54,10 +29,10 @@
     padding: 60px 150px 60px 150px;
     gap: 15px;
 }
-/* drop shadow images*/
-.abouttkno > section img{
-    filter: drop-shadow(5px 10px 10px var(--sonic-silver));
-    width: 100%;
+/* styling images about section*/
+.abouttkno > img{
+    filter: drop-shadow(5px 10px 10px var(--onyx));
+
 }
 /*.aboutwho{
     display: flex;
@@ -74,14 +49,15 @@
 /* style testimonials */
 .testimonials{
     display: flex;
-    flex-wrap: nowrap ;
+    flex-wrap: wrap;
+    flex-direction: column;
     padding: 80px;
-    width: 0;
-    justify-content: stretch;
 }
 
 .review {
     display: flex;
+    padding: 30px;
+
 
 }
 .review img{

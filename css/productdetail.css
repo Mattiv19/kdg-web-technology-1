@@ -28,7 +28,13 @@
     color: var(--sonic-silver)
 }
 
-/* grid*/
+
+
+/* grid main
+.gproductdescr {
+    grid-area: productdescr;
+}
+
 .ghighlights {
     grid-area: highlights;
 }
@@ -38,21 +44,37 @@
 .gmaterialcare {
     grid-area: materialcare;
 }
-.gproductdescr{
-    grid-area: productdescr;
-}
+
 .genvironment{
     grid-area: environment;
 }
-.gridcontainer{
+.gmaincontainer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1f 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "header"
-    "productdescr" "productdescr"
-    "highlights" "productdetails"
-    "highlights" "materialcare"
-    "environment" "environment"
-    "footer" "footer";
+}
+*/
+/* styling data list */
+.datalist{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.datalist > dt {
+    flex: 0 0 50%;
+
+}
+
+.databorder{
+    min-width: 23px;
+    text-align: center;
+    border: solid;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.environment{
+    background: var(--davys-grey);
+
 }

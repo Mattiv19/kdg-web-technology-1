@@ -9,18 +9,16 @@
     color: var(--eerie-black);
     padding: 10px;
 }
-/* to fix
-#breadcrumb a:after{
-
-    content:'>';
-    text-align: center;
-    padding-left:15px;
-} */
-
 /* hover breadcrumb */
 #breadcrumb li a:hover{
     color: var(--sonic-silver);
     text-decoration: underline;
+}
+/* breadcrumb after pictogram */
+.breadcrumbitem:after{
+    content:'>';
+    text-align: center;
+    padding-left: 15px;
 }
 
 /*current breadcrumb page*/
@@ -28,53 +26,158 @@
     color: var(--sonic-silver)
 }
 
-
-
-/* grid main
+/*grid main*/
+.gproducttitle{
+    grid-area: producttitle;
+    padding-top: 60px; /* placement title */
+ }
+ .gproductimg{
+     grid-area: productimg;
+     padding: 80px 80px 50px 150px; /* placement img */
+     filter: drop-shadow(5px 10px 10px var(--gainsboro)); /* styling img */
+ }
 .gproductdescr {
     grid-area: productdescr;
+    padding-right: 180px; /* placement text */
 }
 
-.ghighlights {
-    grid-area: highlights;
-}
-.gproductdetails {
-    grid-area: productdetails;
-}
-.gmaterialcare {
-    grid-area: materialcare;
+.gspecifications{
+    grid-area:specifications
 }
 
 .genvironment{
     grid-area: environment;
+    background: var(--light-gray);
+    padding: 100px;
 }
+
 .gmaincontainer{
     display: grid;
-    grid-template-columns: 1f 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px auto;
+    grid-template-areas:
+    "productimg producttitle"
+    "productimg productdescr"
+    "specifications specifications"
+    "environment environment";
+    background: var(--cultured);
+}
+
+/* grid specifications */
+.gspecstitle{
+    grid-area: specstitle;
+    justify-self: center;
+    margin-left: -200px;
+}
+.ghighlights {
+    grid-area: highlights;
+    justify-self: center;
+}
+.gproductdetails {
+    grid-area: productdetails;
+    margin-left: 50px;
+}
+.gmaterialcare {
+    grid-area: materialcare;
+    margin-left: 50px;
+}
+
+.gspecscontainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
+    "specstitle ."
+    "highlights productdetails"
+    "highlights materialcare";
+    padding: 80px;
+    background: var(--cultured-2);
 }
-*/
-/* styling data list */
-.datalist{
+
+
+/* styling dl lists */
+dl{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+dt{
+    flex-basis:20%;
+    text-align:left;
+    padding: 0.4rem;
+}
+dt::after {
+    content: ":";
+}
+dd {
+    flex-basis: 70%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0.4rem;
 }
 
-.datalist > dt {
-    flex: 0 0 50%;
-
-}
-
+/* styling size boxes */
 .databorder{
-    min-width: 23px;
+    max-width: 20px;
     text-align: center;
     border: solid;
     border-radius: 4px;
-    padding: 3px;
+    margin: 0 10px 0 10px;
+
 }
 
-.environment{
-    background: var(--davys-grey);
+/* styling product description */
+.gproductdescr > p{
+    line-height: 1.8rem;
+}
+.gproductdescr dt{
+    line-height: 3.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
 
+.gproductdescr dd{
+    margin: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.gproductdescr button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 50px 10px 50px;
+    background: var(--canary);
+}
+
+/* styling highlights */
+.ghighlights > ul li {
+    padding: 15px;
+}
+.ghighlights > p {
+    padding: 10px;
+}
+
+/* grid environment section */
+.genvironmenttext{
+    grid-area: environmenttext;
+}
+.genvironmentimg{
+    grid-area: environmentimg;
+    align-self: center;
+    filter: drop-shadow(5px 10px 10px var(--cadet-blue-crayola)); /* styling image */
+}
+.environment{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "environmenttext environmentimg";
+}
+
+/*styling text environment */
+.environment p{
+    padding: 50px 150px 0 50px;
+    line-height: 1.8rem;
+}
+.environment h3{
+    padding-left: 50px;
 }

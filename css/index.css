@@ -10,56 +10,105 @@
     flex-wrap: wrap;
     padding: 30px 30px 70px 30px;
     gap: 20px;
+    background: var(--cultured);
 }
 /* spacing text */
 .intro > p{
     margin: -30px 0 30px 0;
     padding: 15px 350px 15px 350px;
+    line-height: 1.5rem;
 }
 /* drop shadow images*/
 .intro > a img{
     filter: drop-shadow(5px 10px 10px var(--gainsboro));
 }
-/* style about section */
-.abouttkno{
+
+/* grid about section */
+.gaboutwho{
+    grid-area: aboutwho;
+    padding-left: 80px; /* spacing text */
+    line-height: 1.5rem; /*spacing text */
+}
+.gimgwho{
+    grid-area: imgwho;
+    filter: drop-shadow(5px 10px 10px var(--onyx)); /* styling image */
+    width: 100%; /* styling img */
+    padding-bottom: 20px; /* styling img */
+    align-self: center; /* styling img */
+}
+.gaboutwhy{
+    grid-area: aboutwhy;
+    padding: 40px 80px 0 0; /* spacing text */
+    line-height: 1.5rem; /* spacing text */
+}
+.gimgwhy{
+    grid-area: imgwhy;
+    filter: drop-shadow(5px 10px 10px var(--onyx)); /* styling image */
+    padding-top: 30px; /* styling img */
+    width: 100%; /* styling img */
+    justify-self: end; /* styling img */
+    align-self: center; /* styling img */
+}
+.gabouttkno{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "imgwho aboutwho aboutwho"
+    "aboutwhy aboutwhy imgwhy";
     background:var(--davys-grey);
-    color:var(--cultured);
-    display: flex;
-    align-content: space-around;
-    padding: 60px 150px 60px 150px;
-    gap: 15px;
-}
-/* styling images about section*/
-.abouttkno > img{
-    filter: drop-shadow(5px 10px 10px var(--onyx));
-
-}
-/*.aboutwho{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    color: var(--cultured);
+    padding: 100px 150px 100px 150px;
 }
 
-.aboutwhy{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+/* styling titles */
+.gabouttkno h3{
+    color: var(--canary);
 }
 
-/* style testimonials */
-.testimonials{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 80px;
+/* grid testimonials */
+.gtestimonialtitle{
+    grid-area: title;
+    text-align: center; /*text styling */
+    padding-bottom: 30px;
+}
+.greview1{
+    grid-area: review1;
+}
+.greview2{
+    grid-area: review2;
+}
+.greview3{
+    grid-area: review3;
 }
 
-.review {
-    display: flex;
-    padding: 30px;
-
-
+.gtestimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". title ."
+    "review1 review2 review3";
+    background: var(--cultured);
+    padding: 50px 150px 100px 150px;
 }
-.review img{
 
+/* flexbox review */
+.review{
+    display:flex;
+}
+
+/* styling blockquote */
+.review blockquote{
+    margin-left: -10px;
+    padding-top: 20px;
+}
+.review blockquote cite{
+    font-weight: bold;
+}
+
+/* img sizing & spacing */
+.reviewpict{
+    object-fit: contain;
+    margin: 50px;
 }

@@ -1,0 +1,29 @@
+/* grid contact */
+.gcontacttitle{
+    grid-area: contacttitle;
+    padding: 20px;
+}
+.gaddress{
+    grid-area: address;
+    padding: 30px;
+    margin-top: 15px;
+    line-height: 2rem;
+}
+.gmaps{
+    grid-area: maps;
+    padding: 50px;
+}
+.gridcontact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px auto;
+    grid-template-areas:
+    "contacttitle maps"
+    "address maps";
+    padding: 100px 200px 100px 200px;
+    background: var(--cultured-2);
+}
+
+.gaddress > p a{
+    color: var(--eerie-black);
+}

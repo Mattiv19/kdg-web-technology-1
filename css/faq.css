@@ -1,0 +1,32 @@
+/* styling faq */
+.faq{
+    padding: 50px 200px 50px 200px;
+    background: var(--cultured);
+}
+.faqgroup{
+    padding:10px;
+}
+
+/* styling details */
+details{
+    border: 1px solid var(--eerie-black);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* styling question */
+summary{
+    font-weight: bold;
+    padding:10px;
+}
+
+/*styling answer */
+.faqanswer{
+    padding: 0 35px 15px 35px;
+    line-height: 1.8rem;
+}
+.faqanswer > li{
+    margin-left: 40px;
+    padding-left: 10px;
+}

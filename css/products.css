@@ -15,22 +15,8 @@ h3 {
     font-size: 2rem;
 }
 
-/* flexbox tshirts */
-.tshirts{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
-}
-
-/* flexbox hoodies */
-.hoodies{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
-}
-
-/* flexbox sweatshirts*/
-.sweatshirts{
+/* flexbox category */
+.category{
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
@@ -38,10 +24,7 @@ h3 {
 
 /* styling single product */
 .singleproduct{
-    display: flex;
-    flex-direction: column;
     padding: 10px 50px 20px 50px;
-    text-decoration: none;
 }
 
 /* styling product text */
@@ -69,3 +52,6 @@ h3 {
     display: flex;
     padding: 30px 0 0 80px;
 }
+
+
+

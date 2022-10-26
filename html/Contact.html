@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact TKNO</title>
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
-<body>
-<header>
-  <h1>TKNO</h1>
-  <a href="../index.html"><img src="../media/TKNO%20Logo.png" alt="TKNO logo"></a>
-  <nav>
-    <h2>Menu</h2>
+<body class="gridcontainer">
+<header class="gheader">
+  <h1 class="hiddenTitle" id="header">TKNO</h1>
+  <a id="logo" href="../index.html"><img src="../media/TKNO%20Logo.png" alt="TKNO logo"></a>
+  <nav id="menu">
+    <h2 class="hiddenTitle">Menu</h2>
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li>
         <a href="Products.html">Products</a>
-        <ul>
+        <ul class="submenu">
           <li><a href="Products.html#T-shirts">T-shirts</a></li>
           <li><a href="Products.html#Hoodies">Hoodies</a></li>
           <li><a href="Products.html#Sweatshirts">Sweatshirts</a></li>
         </ul>
       </li>
-      <li>Customization</li> <!-- add link-->
+      <li><a href="#">Customization </a></li> <!-- add link-->
       <li><a href="FAQ.html">FAQ</a></li>
-      <li><a href="#">Contact</a></li>
+      <li class="active"><a href="#">Contact</a></li>
     </ul>
   </nav>
 </header>
-<main>
+<main class="gmain">
   <section>
     <h2>Contact Us</h2>
     <address>
@@ -38,7 +40,9 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d624.6025730038515!2d4.408194629273064!3d51.2299381987244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f650ff23f209%3A0x304b95448b13411e!2sNapoleonkaai%2019%2C%202000%20Antwerpen!5e0!3m2!1sen!2sbe!4v1665849179340!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
   </section>
 </main>
-<footer>
+<footer class="gfooter footer">
+  <section>
+  <h2 class="hiddenTitle">Footer</h2>
   <ul>
     <li>Shipping & Return Policy</li>
     <li>Size Guide</li>
@@ -51,6 +55,7 @@
     <li>Contact Us</li>
     <li>Social Media</li>
   </ul>
+  </section>
   &copy; TKNO 2022
 </footer>
 </body>

@@ -3,30 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>FAQ TKNO</title>
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/faq.css">
 </head>
-<body>
-<header>
-  <h1>TKNO</h1>
-  <a href="../index.html"><img src="../media/TKNO%20Logo.png" alt="TKNO logo"></a>
-  <nav>
-    <h2>Menu</h2>
+<body class="gridcontainer">
+<header class="gheader">
+  <h1 class="hiddenTitle">TKNO</h1>
+  <a id="logo" href="../index.html"><img src="../media/TKNO%20Logo.png" alt="TKNO logo"></a>
+  <nav id="menu">
+    <h2 class="hiddenTitle">Menu</h2>
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li>
         <a href="Products.html">Products</a>
-        <ul>
+        <ul class="submenu">
           <li><a href="Products.html#T-shirts">T-shirts</a></li>
           <li><a href="Products.html#Hoodies">Hoodies</a></li>
           <li><a href="Products.html#Sweatshirts">Sweatshirts</a></li>
         </ul>
       </li>
-      <li>Customization</li> <!-- add link-->
-      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Customization</a></li> <!-- add link-->
+      <li class="active"><a href="#">FAQ</a></li>
       <li><a href="Contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
-<main>
+<main class="gmain">
   <article>
     <h2>FAQ</h2>
     <section>
@@ -123,7 +125,9 @@
     </section>
   </article>
 </main>
-<footer>
+<footer class="gfooter footer">
+  <section>
+  <h2 class="hiddenTitle">Footer</h2>
   <ul>
     <li>Shipping & Return Policy</li>
     <li>Size Guide</li>
@@ -136,6 +140,7 @@
     <li>Contact Us</li>
     <li>Social Media</li>
   </ul>
+  </section>
   &copy; TKNO 2022
 </footer>
 </body>

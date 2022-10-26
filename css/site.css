@@ -74,6 +74,7 @@ h4 {
 
 }
 /* style menu */
+/*flex container */
 #menu ul{
     list-style-type: none;
     padding-left: 0;
@@ -81,12 +82,11 @@ h4 {
     font-size: 1.2rem;
     margin-bottom: 0;
 }
-#menu .submenu{
-    display: none;
-}
+/* flex children */
 #menu ul li{
     background-color: var(--eerie-black);
     flex-grow: 1;
+    position: relative;
 }
 #menu li a {
     text-decoration: none;
@@ -95,11 +95,19 @@ h4 {
     text-align: center;
     padding: 12px;
 }
-
+#menu .submenu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%
+}
 /* hover menu */
-#menu ul li a:hover{
+#menu li a:hover{
     background-color: var(--canary);
     color: var(--eerie-black);
+}
+#menu li:hover > .submenu{
+    display: flex;
 }
 /* show current menu */
 #menu ul .active a{

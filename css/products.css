@@ -46,12 +46,49 @@ h3 {
     filter: drop-shadow(5px 10px 10px var(--gainsboro));
 }
 
-/* styling filter */
-.filter ul{
-    list-style-type: none;
-    display: flex;
-    padding: 30px 0 0 80px;
+/* functional filter */
+.singleproduct, input{
+    display: none;
+}
+input#black:checked ~ .filter label#lblblack,
+input#white:checked ~ .filter label#lblwhite,
+input#blue:checked ~ .filter label#lblblue,
+input#green:checked ~ .filter label#lblgreen {
+    color: var(--canary);
+    background: var(--eerie-black);
+    border: 1px solid var(--eerie-black);
+    border-radius: 4px;
 }
 
+input#black:checked ~ .category [data-filter ~="black"],
+input#white:checked ~ .category [data-filter ~="white"],
+input#blue:checked ~ .category [data-filter ~="blue"],
+input#green:checked ~ .category [data-filter ~="green"]{
+    display: initial;
+}
+
+/* styling filter */
+.filter{
+    padding-left: 60px;
+    margin-top: -50px;
+
+}
+.filter h3{
+    font-size: 1.1rem;
+    margin-left: -30px;
+    padding-bottom: 15px;
+
+}
+.filter h3:after{
+    content:":";
+}
+label{
+    padding: 10px;
+    margin-left: 20px;
+
+}
+label:hover{
+    text-decoration: underline;
+}
 
 

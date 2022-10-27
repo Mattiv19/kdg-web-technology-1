@@ -31,14 +31,16 @@
 <main class="gmain">
   <article class="products">
   <h2 class="hiddenTitle">Products</h2>
+    <input id="black" type="checkbox"> <br>
+    <input id="white" type="checkbox"> <br>
+    <input id="blue" type="checkbox"> <br>
+    <input id="green" type="checkbox"> <br>
     <section class="filter">
-      <h3 class="hiddenTitle">Filter</h3>
-      <ul>
-        <li>Black</li>
-        <li>White</li>
-        <li>Blue</li>
-        <li>Green</li>
-      </ul>
+      <h3>Colour filter</h3>
+     <label for="black" id="lblblack">Black</label>
+     <label for="white" id="lblwhite">White</label>
+     <label for="blue" id="lblblue">Blue</label>
+     <label for="green" id="lblgreen">Green</label>
     </section>
     <section class="category">
       <h3 id="T-shirts">T-shirts</h3>
@@ -117,45 +119,45 @@
     </section>
     <section class="category">
       <h3 id="Hoodies">Hoodies</h3>
-        <section class="singleproduct">
+        <section class="singleproduct" data-filter="black">
           <img src="../media/Hoodie%201%20-%20Home.jpg" alt="man wearing Boris Brejcha Joker hoodie from TKNO.">
           <h4>Boris Brejcha Joker - Hoodie</h4>
           <p>69.99 EUR</p>
         </section>
-        <section class="singleproduct">
+        <section class="singleproduct" data-filter="black">
           <img src="../media/Nice%20People%20Techno%20-%20Hoodie%201.jpg" alt="man wearing Nice People Techno Hoodie from TKNO.">
           <h4>Nice People Techno - Hoodie </h4>
           <p>69.99 EUR</p>
         </section>
-        <section class="singleproduct">
+        <section class="singleproduct" data-filter="blue">
           <img src="../media/Big%20X%20Alien%20-%20Hoodie%201.jpg"
                alt="man wearing Big X Alien Hoodie from TKNO.">
           <h4>Big X Alien - Hoodie </h4>
           <p>69.99 EUR</p>
         </section>
-        <section class="singleproduct">
+        <section class="singleproduct" data-filter="green">
           <img src="../media/Acid%20-%20Hoodie%201.jpg" alt="man wearing Acid Hoodie from TKNO.">
           <h4>Acid - Hoodie </h4>
           <p>69.99 EUR</p>
         </section>
-        <section class="singleproduct">
+        <section class="singleproduct" data-filter="white">
           <img src="../media/Melting%20Smiley%20-%20Hoodie%201.jpg"
                alt="Melting Smiley Hoodie from TKNO on coat rack.">
           <h4>Melting Smiley - Hoodie </h4>
           <p>69.99 EUR</p>
         </section>
-        <section class="singleproduct">
+        <section class="singleproduct" data-filter="blue">
           <img src="../media/Vinyl%20Space%20-%20Hoodie%201.jpg" alt="Vinyl Space Hoodie from TKNO.">
           <h4>Vinyl Space - Hoodie </h4>
           <p>69.99 EUR</p>
         </section>
-        <section class="singleproduct">
+        <section class="singleproduct" data-filter="black">
           <img src="../media/Yellow%20Smileys%20-%20Hoodie%201.jpg"
                alt="man wearing Yellow Smileys Hoodie from TKNO.">
           <h4>Yellow Smileys - Hoodie </h4>
           <p>69.99 EUR</p>
         </section>
-        <section class="singleproduct">
+        <section class="singleproduct" data-filter="white">
           <img src="../media/Techno%20Vinyl%20-%20Hoodie%201.jpg"
                alt="Techno Vinyl Hoodie from TKNO on coat rack.">
           <h4>Techno Vinyl - Hoodie </h4>
@@ -164,33 +166,33 @@
     </section>
     <section class="category">
       <h3 id="Sweatshirts">Sweatshirts</h3>
-      <section class="singleproduct">
+      <section class="singleproduct" data-filter="black">
         <img src="../media/Sweatershirt%201%20-%20Home.jpg" alt="man wearing black Techno sweatshirt from TKNO.">
         <h4>Techno Black - Sweatshirt</h4>
         <p>59.99 EUR</p>
       </section>
-      <section class="singleproduct">
+      <section class="singleproduct" data-filter="white">
         <img src="../media/Boris%20Brejcha%20-%20Sweatshirt%201.jpg" alt="Boris Brejcha sweatshirt from TKNO.">
         <h4>Boris Brejcha - Sweatshirt </h4>
         <p>59.99 EUR</p>
       </section>
-      <section class="singleproduct">
+      <section class="singleproduct" data-filter="black">
         <img src="../media/Acid%20-%20Sweatshirt%201.jpg" alt="Acid sweatshirt from TKNO on coat rack.">
         <h4>ACID - Sweatshirt </h4>
         <p>59.99 EUR</p>
       </section>
-      <section class="singleproduct">
+      <section class="singleproduct" data-filter="blue">
         <img src="../media/Known%20Artist%20-%20Sweatshirt%201.jpg"
              alt="Man wearing Known Artist sweatshirt from TKNO.">
         <h4>Known Artist - Sweatshirt </h4>
         <p>59.99 EUR</p>
       </section>
-      <section class="singleproduct">
+      <section class="singleproduct" data-filter="green">
         <img src="../media/ACID87%20-%20Sweatshirt%201.jpg" alt="ACID87 sweatshirt from TKNO.">
         <h4>ACID87 - Sweatshirt </h4>
         <p>59.99 EUR</p>
       </section>
-      <section class="singleproduct">
+      <section class="singleproduct" data-filter="white">
         <img src="../media/Coffee%20Techno%20-%20Sweatshirt%201.jpg" alt="Coffee Techno sweatshirt from TKNO on coat rack.">
         <h4>Coffee Techno - Sweatshirt </h4>
         <p>59.99 EUR</p>

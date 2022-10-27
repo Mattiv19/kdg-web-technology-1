@@ -106,6 +106,7 @@ h4 {
     background-color: var(--canary);
     color: var(--eerie-black);
 }
+
 #menu li:hover > .submenu{
     display: flex;
 }

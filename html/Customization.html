@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customization</title>
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/Customization.css">
+</head>
+<body>
+<header class="gheader">
+    <h1 class="hiddenTitle" id="header">TKNO</h1>
+    <a id="logo" href="../index.html"><img src="../media/TKNO%20Logo.png" alt="TKNO logo"></a>
+    <nav id="menu">
+        <h2 class="hiddenTitle">Menu</h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a href="Products.html">Products</a>
+                <ul class="submenu">
+                    <li><a href="Products.html#T-shirts">T-shirts</a></li>
+                    <li><a href="Products.html#Hoodies">Hoodies</a></li>
+                    <li><a href="Products.html#Sweatshirts">Sweatshirts</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#">Customization </a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2 class="hiddenTitle">Customization Form</h2>
+    <form action="Confirmation.html" method="get">
+        <fieldset>
+            <legend>Customization</legend>
+
+            <label> Colour:
+                <select name="colour">
+                    <option disabled selected value="">Choose your colour</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                </select>
+            </label>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"
+                      placeholder="In case you have specific wishes for your customization, please enter them here."></textarea>
+
+        </fieldset>
+        <fieldset>
+            <legend>Personal info</legend>
+                <label><input type="radio" name="salutation" value="Mr.">Mr.</label>
+                <label><input type="radio" name="salutation" value="Mrs.">Mrs.</label>
+
+
+                <label for="name">Last Name</label>
+                <input id="name" type="text" name="name" required placeholder="Last name">
+                <label for="firstname">First Name</label>
+                <input id="firstname" type="text" name="firstname" required placeholder="First name">
+
+                <label for="address">Address</label>
+                <input id="address" type="text" name="address" required placeholder="Napoleonstraat 19">
+                <label for="postalcode">Postal Code</label>
+                <input id="postalcode" type="text" name="postalcode">
+        </fieldset>
+        <fieldset>
+            <legend>Contact info</legend>
+
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" required placeholder="carl.cox@student.kdg.be">
+
+            <label for="tel">Tel.</label>
+            <input id="tel" type="tel" name="Tel number" required placeholder="0485557819"
+                   pattern="^0?[1-9][0-9]{7,8}$">
+        </fieldset>
+        <input type="submit" class="button">
+    </form>
+
+</main>
+
+<footer class="gfooter footer">
+    <section>
+        <h2 class="hiddenTitle">Footer</h2>
+        <ul>
+            <li>Shipping & Return Policy</li>
+            <li>Size Guide</li>
+        </ul>
+        <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+        </ul>
+        <ul>
+            <li>Contact Us</li>
+            <li>Social Media</li>
+        </ul>
+    </section>
+    &copy; TKNO 2022
+</footer>
+</body>
+</html>

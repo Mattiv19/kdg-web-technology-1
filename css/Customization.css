@@ -1,0 +1,11 @@
+main{
+    background: var(--cultured);
+    padding: 50px;
+}
+
+.button{
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 7px 15px 7px 15px;
+    background: var(--canary);
+}

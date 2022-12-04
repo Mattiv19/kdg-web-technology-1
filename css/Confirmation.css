@@ -1,0 +1,5 @@
+.confirmation{
+    background: var(--ligth-canary);
+    padding: 20px 350px 100px 350px;
+    line-height: 2;
+}

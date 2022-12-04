@@ -1,11 +1,87 @@
+/* main styling */
 main{
-    background: var(--cultured);
-    padding: 50px;
+    background-image: linear-gradient(135deg, var(--cultured-2), var(--cultured), var(--ligth-canary));
+    padding: 30px;
 }
 
+#form{
+    max-width: 50em;
+    margin:10px auto;
+    padding: 3.5rem;
+    background: var(--eerie-black);
+}
+
+/* title styling */
+#customizeTitle{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* field styling */
+.field{
+    margin-top: 20px;
+    border: none;
+}
+
+.field > legend{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+    color: var(--canary);
+}
+
+/* forminput styling */
+.forminput{
+    color: var(--cultured);
+    display: flex;
+}
+
+/* styling names input fields */
+.formitemname{
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 18px 10px 20px 10px;
+}
+
+/* styling input fields */
+.formdesign{
+    color: var(--eerie-black);
+    width: 80%;
+    margin: 8px 0 20px 0;
+    padding: 10px;
+    border: 1px solid var(--cultured);
+    box-sizing: border-box;
+    display: block;
+}
+
+/* fixed height comment box */
+#comment{
+    height: 8rem;
+    resize: none;
+}
+
+/* checkbox en radio styling */
+.checkradio{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+}
+.checkradio > label{
+    padding-right: 50px;
+}
+
+/* styling buttons checkbox en radio */
+.checkradio > label input {
+    margin: 10px;
+    transform: scale(1.5);
+}
+/* button styling */
 .button{
     font-weight: bold;
-    margin-top: 20px;
+    font-size: 1.1rem;
+    margin-left: 15px;
     padding: 7px 15px 7px 15px;
+    border: 1px solid;
     background: var(--canary);
 }

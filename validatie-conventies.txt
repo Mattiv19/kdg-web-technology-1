@@ -4,11 +4,17 @@
 	Lang is not "nl"
 ./html/Contact.html
 	Lang is not "nl"
+./html/Confirmation.html
+	Lang is not "nl"
 ./html/Products.html
 	Lang is not "nl"
 ./html/Acid-T-Shirt-Details.html
 	Lang is not "nl"
 ./html/Mega-Yellow-Smiley-Details.html
 	Lang is not "nl"
+./html/Customization.html
+	Lang is not "nl"
 ./html/FAQ.html
+	Lang is not "nl"
+./html/js-basis.html
 	Lang is not "nl"

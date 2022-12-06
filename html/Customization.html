@@ -5,11 +5,12 @@
     <title>Customization</title>
     <link rel="stylesheet" href="../css/site.css">
     <link rel="stylesheet" href="../css/Customization.css">
+    <script src="../script/js-basis.js" defer></script>
 </head>
 <body class="gridcontainer">
 <header class="gheader">
     <h1 class="hiddenTitle">TKNO</h1>
-        <a id="logo" href="../index.html"><img src="../media/TKNO%20Logo.png" alt="TKNO logo"></a>
+    <a id="logo" href="../index.html"><img src="../media/TKNO%20Logo.png" alt="TKNO logo"></a>
     <nav id="menu">
         <h2 class="hiddenTitle">Menu</h2>
         <ul>
@@ -30,21 +31,21 @@
 </header>
 <main>
     <section>
-    <h2 id="customizeTitle">Customize your TKNO Clothing</h2>
-    <form id="form" action="Confirmation.html" method="get">
-        <fieldset class="field">
-            <legend>Customization</legend>
-            <div class="forminput">
-                <label class="formitemname"> Product: </label>
+        <h2 id="customizeTitle">Customize your TKNO Clothing</h2>
+        <form id="form" action="Confirmation.html" method="get">
+            <fieldset class="field">
+                <legend>Customization</legend>
+                <div class="forminput">
+                    <label class="formitemname"> Product: </label>
                     <select name="product" class="formdesign">
                         <option disabled selected value="">Choose your product</option>
                         <option value="Mega_Yellow_Smiley">Mega Yellow Smiley - T-shirt</option>
                         <option value="Out_Of_Your_Head">Out Of Your Head - T-shirt</option>
                         <option value="Acid">Acid - T-shirt</option>
                     </select>
-            </div>
-            <div class="forminput">
-                <label class="formitemname"> Colour: </label>
+                </div>
+                <div class="forminput">
+                    <label class="formitemname"> Colour: </label>
                     <select name="colour" class="formdesign">
                         <option disabled selected value="">Choose your colour</option>
                         <option value="black">Black</option>
@@ -52,9 +53,9 @@
                         <option value="Blue">Blue</option>
                         <option value="Green">Green</option>
                     </select>
-            </div>
-            <div class="forminput">
-                <label class="formitemname"> Size: </label>
+                </div>
+                <div class="forminput">
+                    <label class="formitemname"> Size: </label>
                     <select name="size" class="formdesign">
                         <option disabled selected value="">Choose your size</option>
                         <option value="xs">Extra Small</option>
@@ -63,16 +64,17 @@
                         <option value="l">Large</option>
                         <option value="xl">Extra Large</option>
                     </select>
-            </div>
-            <div class="forminput">
+                </div>
+                <div class="forminput">
                     <p class="formitemname">Print: </p>
                     <div class="checkradio">
-                        <label><input type="checkbox" name="front">Print Front</label>
-                        <label><input type="checkbox" name="back">Print Back</label>
+                        <label><input type="checkbox" name="front" id="front">Print Front</label>
+                        <label><input type="checkbox" name="back" id="back">Print Back</label>
                     </div>
-            </div>
-            <div class="forminput">
-                <label class="formitemname">Fitting Style: </label>
+                </div>
+                <span id="checkedFrontBack"></span>
+                <div class="forminput">
+                    <label class="formitemname">Fitting Style: </label>
                     <select name="fitting" class="formdesign">
                         <option disabled selected value="">Choose your fitting</option>
                         <option value="stretch">Slim fit stretch</option>
@@ -80,64 +82,69 @@
                         <option value="heavyweight">Heavyweight fit</option>
                         <option value="oversized">Oversized fit</option>
                     </select>
-            </div>
-            <div class="forminput">
-                <label for="comment" class="formitemname">Comment:</label>
-                <textarea id="comment" name="comment" class="formdesign"
-                          placeholder="In case you have specific wishes for your customization, please enter them here."></textarea>
-            </div>
-        </fieldset>
-        <fieldset class="field">
-            <legend>Personal info</legend>
-            <div class="forminput">
-                <p class="formitemname">Salutation:</p>
-                <div class="checkradio">
-                    <label><input type="radio" name="salutation" value="Mr.">Mr.</label>
-                    <label><input type="radio" name="salutation" value="Mrs.">Mrs.</label>
                 </div>
-            </div>
-            <div class="forminput">
-                <label for="firstname" class="formitemname">First name:</label>
-                <input id="firstname" type="text" name="firstname" class="formdesign" required minlength="2"
-                       maxlength="50"
-                       placeholder="First name">
-            </div>
-            <div class="forminput">
-                <label for="name" class="formitemname">Last name:</label>
-                <input id="name" type="text" name="name" class="formdesign" required minlength="2" maxlength="50"
-                       placeholder="Last name">
-            </div>
-            <div class="forminput">
-                <label for="birthdate" class="formitemname">Birth date:</label>
-                <input id="birthdate" type="date" name="birthdate" class="formdesign" required min="1922-12-01"
-                       max="2022-12-01">
-            </div>
-            <div class="forminput">
-                <label for="street" class="formitemname">Street name:</label>
-                <input id="street" type="text" name="street" class="formdesign" required minlength="2" maxlength="50"
-                       placeholder="Napoleonstraat">
-            </div>
-            <div class="forminput">
-                <label for="houseNumber" class="formitemname">House number:</label>
-                <input id="houseNumber" type="number" name="houseNumber" class="formdesign" required min="1"
-                       max="9999" placeholder="19">
-            </div>
-            <div class="forminput">
-                <label for="addressInfo" class="formitemname">Additional address info:</label>
-                <input id="addressInfo" type="text" name="addressInfo" class="formdesign" placeholder="Bus 4, verd. 2">
-            </div>
-            <div class="forminput">
-                <label for="postalcode" class="formitemname">Postal code:</label>
-                <input id="postalcode" type="text" class="formdesign" required minlength="4" maxlength="8"
-                       name="postalcode" placeholder="2000">
-            </div>
-            <div class="forminput">
-                <label for="city" class="formitemname">City:</label>
-                <input id="city" type="text" class="formdesign" required minlength="2" maxlength="50" name="city"
-                       placeholder="Antwerp">
-            </div>
-            <div class="forminput">
-                <label class="formitemname">Country: </label>
+                <div class="forminput">
+                    <label for="comment" class="formitemname">Comment:</label>
+                    <textarea id="comment" name="comment" class="formdesign"
+                              placeholder="In case you have specific wishes for your customization, please enter them here."></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="field">
+                <legend>Personal info</legend>
+                <div class="forminput">
+                    <p class="formitemname">Salutation:</p>
+                    <div class="checkradio">
+                        <label><input type="radio" name="salutation" value="Mr.">Mr.</label>
+                        <label><input type="radio" name="salutation" value="Mrs.">Mrs.</label>
+                    </div>
+                </div>
+                <div class="forminput">
+                    <label for="firstname" class="formitemname">First name:</label>
+                    <input id="firstname" type="text" name="firstname" class="formdesign" required minlength="2"
+                           maxlength="50"
+                           placeholder="First name">
+                </div>
+                <span id="errorFirstName"></span>
+                <div class="forminput">
+                    <label for="lastname" class="formitemname">Last name:</label>
+                    <input id="lastname" type="text" name="lastname" class="formdesign" required minlength="2"
+                           maxlength="50"
+                           placeholder="Last name">
+                </div>
+                <span id="errorLastName"></span>
+                <div class="forminput">
+                    <label for="birthdate" class="formitemname">Birth date:</label>
+                    <input id="birthdate" type="date" name="birthdate" class="formdesign" required min="1922-12-01"
+                           max="2022-12-01">
+                </div>
+                <div class="forminput">
+                    <label for="street" class="formitemname">Street name:</label>
+                    <input id="street" type="text" name="street" class="formdesign" required minlength="2"
+                           maxlength="50"
+                           placeholder="Napoleonstraat">
+                </div>
+                <div class="forminput">
+                    <label for="houseNumber" class="formitemname">House number:</label>
+                    <input id="houseNumber" type="number" name="houseNumber" class="formdesign" required min="1"
+                           max="9999" placeholder="19">
+                </div>
+                <div class="forminput">
+                    <label for="addressInfo" class="formitemname">Additional address info:</label>
+                    <input id="addressInfo" type="text" name="addressInfo" class="formdesign"
+                           placeholder="Bus 4, verd. 2">
+                </div>
+                <div class="forminput">
+                    <label for="postalcode" class="formitemname">Postal code:</label>
+                    <input id="postalcode" type="text" class="formdesign" required minlength="4" maxlength="8"
+                           name="postalcode" placeholder="2000">
+                </div>
+                <div class="forminput">
+                    <label for="city" class="formitemname">City:</label>
+                    <input id="city" type="text" class="formdesign" required minlength="2" maxlength="50" name="city"
+                           placeholder="Antwerp">
+                </div>
+                <div class="forminput">
+                    <label class="formitemname">Country: </label>
                     <select name="Country" class="formdesign">
                         <option disabled selected value="">select country</option>
                         <option value="BE">Belgium</option>
@@ -150,23 +157,25 @@
                         <option value="OT">Other</option>
                     </select>
 
-            </div>
-        </fieldset>
-        <fieldset class="field">
-            <legend>Contact info</legend>
-            <div class="forminput">
-                <label for="email" class="formitemname">E-mail:</label>
-                <input id="email" type="email" name="email" class="formdesign" required minlength="18" maxlength="50"
-                       placeholder="carl.cox@student.kdg.be">
-            </div>
-            <div class="forminput">
-                <label for="tel" class="formitemname">Phone number:</label>
-                <input id="tel" type="tel" name="Tel number" class="formdesign" required placeholder="0485557819"
-                       pattern="^0?[1-9][0-9]{7,8}$">
-            </div>
-        </fieldset>
-        <input type="submit" class="button" value="Submit">
-    </form>
+                </div>
+            </fieldset>
+            <fieldset class="field">
+                <legend>Contact info</legend>
+                <div class="forminput">
+                    <label for="email" class="formitemname">E-mail:</label>
+                    <input id="email" type="email" name="email" class="formdesign" required minlength="18"
+                           maxlength="50"
+                           placeholder="carl.cox@student.kdg.be">
+                </div>
+                <span id="errorMail"></span>
+                <div class="forminput">
+                    <label for="tel" class="formitemname">Phone number:</label>
+                    <input id="tel" type="tel" name="Tel number" class="formdesign" required placeholder="0485557819"
+                           pattern="^0?[1-9][0-9]{7,8}$">
+                </div>
+            </fieldset>
+            <input type="submit" class="button" value="Submit">
+        </form>
     </section>
 </main>
 <footer class="gfooter footer">

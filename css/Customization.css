@@ -34,11 +34,13 @@ main{
 .forminput{
     color: var(--cultured);
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* styling names input fields */
 .formitemname{
-    width: 40%;
+    width: 25%;
     margin-bottom: 20px;
     padding: 18px 10px 20px 10px;
 }
@@ -46,7 +48,7 @@ main{
 /* styling input fields */
 .formdesign{
     color: var(--eerie-black);
-    width: 80%;
+    width: 65%;
     margin: 8px 0 20px 0;
     padding: 10px;
     border: 1px solid var(--cultured);
@@ -58,6 +60,7 @@ main{
 #comment{
     height: 8rem;
     resize: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* checkbox en radio styling */
@@ -65,7 +68,7 @@ main{
     display: flex;
     align-items: center;
     padding: 20px;
-    width: 80%;
+    width: 61%;
 }
 .checkradio > label{
     padding-right: 50px;
@@ -97,9 +100,19 @@ main{
 /* error messages */
 span{
     color: #ef233c;
-    display: flex;
     justify-content: right;
     font-size: 0.9rem;
     padding-bottom: 15px;
     margin-top: -12px;
+    flex-basis: 100%;
+    text-align: right;
+}
+
+#errorsubmit{
+    margin-left: 10px;
+}
+
+/* colour input field when valid */
+.validvalue{
+    background: #06d6a0;
 }

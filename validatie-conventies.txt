@@ -14,6 +14,8 @@
 	Lang is not "nl"
 ./html/Customization.html
 	Lang is not "nl"
+./html/CustomKlad.html
+	Lang is not "nl"
 ./html/FAQ.html
 	Lang is not "nl"
 ./html/js-basis.html

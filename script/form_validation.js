@@ -1,79 +1,59 @@
 window.addEventListener('load', init, false);
 
 function init(){
+    let fullnameField = document.querySelector("#fullname");
+    let emailField = document.querySelector("#email");
     let form = document.querySelector('form');
+    fullnameField.addEventListener('change', validateFullName, false);
+    emailField.addEventListener('input', validateEmail, false);
     form.addEventListener('submit', submit, false);
-    let input = document.querySelector('input')
-    input.addEventListener('change', validateLastName, false);
-    input.addEventListener('input', validateEmail, false);
-    input.addEventListener('click', printFrontBack);
 }
 
+function validateFullName(fullnameField){
+    let content = document.getElementById("fullname").value;
+    let feedback = document.getElementById("errorFullName");
 
-/* met 2 werkt niet. aparte functies is redundant. hoe in 1 functie krijgen */
-function validateLastName(){
-    let contentln = document.getElementById("lastname").value;
-    let contentfn = document.getElementById("firstname").value;
-    let feedbackln = document.getElementById("errorLastName");
-    let feedbackfn = document.getElementById("errorFirstName");
-    const validationWhitespaces = /\s+/;  //^[a-zA-Z]$
-
-    if(validationWhitespaces.test(contentfn)){
-        feedbackfn.innerHTML = "⚠️ Your last name should not contain any spaces before or after.";
-        console.log(contentfn);
-        return false;
-    }  else if(validationWhitespaces.test(contentln)){
-        feedbackln.innerHTML = "⚠️ Your last name should not contain any spaces before or after.";
-        console.log(contentln);
+    if(content.trim().length !== content.length){
+        console.log(content.trim().length);
+        console.log(content.length);
+        feedback.innerHTML = "⚠️ Your last name should not contain any spaces before or after.";
+        fullnameField.classList.remove("validvalue");
         return false;
     } else{
-        feedbackfn.innerHTML = "";
-        feedbackln.innerHTML = "";
+        feedback.innerHTML="";
+        fullnameField.classList.add('validvalue');
     }
     return true;
-
-
 }
 
-
-/* recheck pattern + melding op foute moment */
-function validateEmail(){
-    let contentEmail = document.getElementById("email").value;
-    console.log(contentEmail);
-    let feedbackEmail = document.getElementById("errorMail");
-    const validationEmail = /^\w+([.]-]?\w+)*@(\w{7}\.)*(\w{3})*(\.\w{2})+$/;
-
-    if(validationEmail.test(contentEmail)){
-
-        return true;
+function validateEmail(emailField){
+    let mail = document.getElementById("email").value;
+    let feedback = document.getElementById("errorMail");
+    const validationEmailPattern = /^[A-z\-]+\.[A-z\-]+[.{1}[A-z\-]*@(student.)*kdg.be/;
+    if(mail.charAt(0) === "." || mail.charAt(mail.length-1) === "."){
+        feedback.innerHTML = "⚠️ Your email should not start or end with a dot.";
+        return false;
+    } else if(mail.includes("..")){
+        feedback.innerHTML = "⚠️ Your email should not contain more than one dot.";
+        return false;
+    } else if(!validationEmailPattern.test(mail)){
+        console.log(mail)
+        feedback.innerHTML = "⚠️ your email should be of type @student.kdg.be or @kdg.be";
+        return false;
     } else{
-       feedbackEmail.innerHTML= "⚠️ Your email should be of the following type: @student.kdg.be or @kdg.be";
+        feedback.innerHTML = "";
+        emailField.classList.add("validvalue");
     }
-    return false;
+    return true;
 }
 
-
-/* does not work */
-function printFrontBack(){
-    let checkedFront = document.querySelector('#front:checked');
-    console.log(checkedFront);
-    let checkedBack = document.querySelector('#back:checked');
-    console.log(checkedBack);
-    let feedbackPrint = document.getElementById("checkedFrontBack");
-
-    if(checkedFront !== null && checkedBack !== null){
-        feedbackPrint.innerHTML =
-            "You selected both front and back print.\nNote that the front will be a small print and the back will be" +
-            " a" +
-            " large print"
-        return true;
-    }
-    return false;
-}
 
 
 function submit(event){
-    if(!validateLastName() || !validateEmail()){
+    let feedback = document.getElementById("errorsubmit");
+    if(!validateFullName() || !validateEmail()){
         event.preventDefault();
+        feedback.innerHTML = "⚠️ Please check your name and/or e-mail.";
+        console.log(feedback);
     }
 }

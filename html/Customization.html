@@ -5,7 +5,8 @@
     <title>Customization</title>
     <link rel="stylesheet" href="../css/site.css">
     <link rel="stylesheet" href="../css/Customization.css">
-    <script src="../script/js-basis.js" defer></script>
+    <script src="../script/form_validation.js" defer></script>
+    <script src="../script/form_result.js" defer></script>
 </head>
 <body class="gridcontainer">
 <header class="gheader">
@@ -39,17 +40,17 @@
                     <label class="formitemname"> Product: </label>
                     <select name="product" class="formdesign">
                         <option disabled selected value="">Choose your product</option>
-                        <option value="Mega_Yellow_Smiley">Mega Yellow Smiley - T-shirt</option>
-                        <option value="Out_Of_Your_Head">Out Of Your Head - T-shirt</option>
-                        <option value="Acid">Acid - T-shirt</option>
+                        <option value="Mega Yellow Smiley - T-shirt">Mega Yellow Smiley - T-shirt</option>
+                        <option value="Out Of Your Head - T-shirt">Out Of Your Head - T-shirt</option>
+                        <option value="Acid - T-shirt">Acid - T-shirt</option>
                     </select>
                 </div>
                 <div class="forminput">
                     <label class="formitemname"> Colour: </label>
                     <select name="colour" class="formdesign">
                         <option disabled selected value="">Choose your colour</option>
-                        <option value="black">Black</option>
-                        <option value="white">White</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
                         <option value="Blue">Blue</option>
                         <option value="Green">Green</option>
                     </select>
@@ -58,18 +59,18 @@
                     <label class="formitemname"> Size: </label>
                     <select name="size" class="formdesign">
                         <option disabled selected value="">Choose your size</option>
-                        <option value="xs">Extra Small</option>
-                        <option value="s">Small</option>
-                        <option value="m">Medium</option>
-                        <option value="l">Large</option>
-                        <option value="xl">Extra Large</option>
+                        <option value="Extra small">Extra Small</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="Extra large">Extra Large</option>
                     </select>
                 </div>
                 <div class="forminput">
                     <p class="formitemname">Print: </p>
                     <div class="checkradio">
-                        <label><input type="checkbox" name="front" id="front">Print Front</label>
-                        <label><input type="checkbox" name="back" id="back">Print Back</label>
+                        <label><input type="checkbox" name="printfront" value="Front" id="front">Print Front</label>
+                        <label><input type="checkbox" name="printback" value="Back" id="back">Print Back</label>
                     </div>
                 </div>
                 <span id="checkedFrontBack"></span>
@@ -77,10 +78,10 @@
                     <label class="formitemname">Fitting Style: </label>
                     <select name="fitting" class="formdesign">
                         <option disabled selected value="">Choose your fitting</option>
-                        <option value="stretch">Slim fit stretch</option>
-                        <option value="regular">Regular fit</option>
-                        <option value="heavyweight">Heavyweight fit</option>
-                        <option value="oversized">Oversized fit</option>
+                        <option value="Stretch">Slim fit stretch</option>
+                        <option value="Regular">Regular fit</option>
+                        <option value="Heavyweight">Heavyweight fit</option>
+                        <option value="Oversized">Oversized fit</option>
                     </select>
                 </div>
                 <div class="forminput">
@@ -99,19 +100,13 @@
                     </div>
                 </div>
                 <div class="forminput">
-                    <label for="firstname" class="formitemname">First name:</label>
-                    <input id="firstname" type="text" name="firstname" class="formdesign" required minlength="2"
+                    <label for="fullname" class="formitemname">Full name:</label>
+                    <input id="fullname" type="text" name="fullname" class="formdesign" required minlength="2"
                            maxlength="50"
-                           placeholder="First name">
+                           placeholder="Full name - e.g. Charlotte de Witte">
+                    <span id="errorFullName"></span>
                 </div>
-                <span id="errorFirstName"></span>
-                <div class="forminput">
-                    <label for="lastname" class="formitemname">Last name:</label>
-                    <input id="lastname" type="text" name="lastname" class="formdesign" required minlength="2"
-                           maxlength="50"
-                           placeholder="Last name">
-                </div>
-                <span id="errorLastName"></span>
+
                 <div class="forminput">
                     <label for="birthdate" class="formitemname">Birth date:</label>
                     <input id="birthdate" type="date" name="birthdate" class="formdesign" required min="1922-12-01"
@@ -145,7 +140,7 @@
                 </div>
                 <div class="forminput">
                     <label class="formitemname">Country: </label>
-                    <select name="Country" class="formdesign">
+                    <select name="country" class="formdesign">
                         <option disabled selected value="">select country</option>
                         <option value="BE">Belgium</option>
                         <option value="NL">Netherlands</option>
@@ -170,11 +165,12 @@
                 <span id="errorMail"></span>
                 <div class="forminput">
                     <label for="tel" class="formitemname">Phone number:</label>
-                    <input id="tel" type="tel" name="Tel number" class="formdesign" required placeholder="0485557819"
+                    <input id="tel" type="tel" name="phonenumber" class="formdesign" required placeholder="0485557819"
                            pattern="^0?[1-9][0-9]{7,8}$">
                 </div>
             </fieldset>
             <input type="submit" class="button" value="Submit">
+            <span id="submit"></span>
         </form>
     </section>
 </main>

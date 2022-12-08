@@ -1,5 +1,57 @@
-.confirmation{
+/* background colour */
+main{
     background: var(--ligth-canary);
-    padding: 20px 350px 100px 350px;
+}
+
+/* confirmation styling */
+.confirmation{
+    max-width: 50em;
+    margin: 10px auto;
+    padding: 20px 350px 20px 350px;
     line-height: 2;
+}
+
+/* overview styling */
+#form{
+    max-width: 50em;
+    margin:10px auto 80px auto;
+    padding: 3.5rem;
+    background: var(--eerie-black);
+}
+
+/* styling title overview */
+#titleOverview{
+    color: var(--cultured);
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+/* styling sub titles */
+h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 0 10px 0;
+    color: var(--canary);
+}
+
+/* form output styling */
+.formOutput{
+    color: var(--cultured);
+    display: flex;
+}
+
+.formOutput > p{
+    width: 40%;
+    padding: 10px 10px 10px 40px;
+ }
+
+.formOutput > span{
+    width: 80%;
+    margin: 15px 0 20px 0;
+    padding: 10px;
+    border: 1px solid var(--cultured);
+    box-sizing: border-box;
+    display: block;
 }

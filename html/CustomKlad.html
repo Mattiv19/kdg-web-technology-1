@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/site.css">
     <link rel="stylesheet" href="../css/Customization.css">
     <script src="../script/js-basis.js" defer></script>
-    <script src="../script/form_validation.js"></script>
+    <script src="../script/form_validation.js" defer></script>
 </head>
 <body class="gridcontainer">
 <header class="gheader">
@@ -36,27 +36,24 @@
         <form id="form" action="Confirmation.html" method="get">
             <fieldset class="field">
                 <legend>Personal info</legend>
+
                 <div class="forminput">
-                  <label for="firstname" class="formitemname">First name:</label>
-                  <input id="firstname" type="text" name="firstname" class="formdesign" minlength="2"
-                         maxlength="50"
-                         placeholder="First name">
+                    <label for="fullname" class="formitemname">Full name:</label>
+                    <input id="fullname" type="text" name="fullname" class="formdesign" required minlength="2"
+                           maxlength="50"
+                           placeholder="Full name - e.g. Charlotte de Witte">
+                    <span id="errorFullName"></span>
                 </div>
-                <span id="errorFirstName"></span>
-                <div class="forminput">
-                    <label for="lastname" class="formitemname">Last name:</label>
-                    <input id="lastname" type="text" name="lastname" class="formdesign"
-                           placeholder="Last name">
-                </div>
-                <span id="errorLastName"></span>
+
                 <div class="forminput">
                     <label for="email" class="formitemname">E-mail:</label>
                     <input id="email" type="email" name="email" class="formdesign" minlength="18"
                            maxlength="50"
                            placeholder="carl.cox@student.kdg.be">
+                    <span id="errorMail"></span>
                 </div>
-                <span id="errorMail"></span>
 
+                <!--
                 <div class="forminput">
                     <p class="formitemname">Print: </p>
                     <div class="checkradio">
@@ -64,9 +61,10 @@
                         <label><input type="checkbox" name="print" id="back">Print Back</label>
                     </div>
                 </div>
-                <span id="checkedFrontBack"></span>
+                <span id="checkedFrontBack"></span> -->
             </fieldset>
             <input type="submit" class="button" value="Submit">
+            <span id="errorsubmit"></span>
         </form>
     </section>
 </main>

@@ -100,7 +100,6 @@ main{
 /* error messages */
 span{
     color: #ef233c;
-    justify-content: right;
     font-size: 0.9rem;
     padding-bottom: 15px;
     margin-top: -12px;
@@ -114,5 +113,6 @@ span{
 
 /* colour input field when valid */
 .validvalue{
-    background: #06d6a0;
+    background-color: var(--aquamarine);
 }
+/*06d6a0*/

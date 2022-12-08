@@ -37,8 +37,8 @@
             <fieldset class="field">
                 <legend>Customization</legend>
                 <div class="forminput">
-                    <label class="formitemname"> Product: </label>
-                    <select name="product" class="formdesign">
+                    <label for="product-label" class="formitemname"> Product: </label>
+                    <select name="product" id="product-label" class="formdesign">
                         <option disabled selected value="">Choose your product</option>
                         <option value="Mega Yellow Smiley - T-shirt">Mega Yellow Smiley - T-shirt</option>
                         <option value="Out Of Your Head - T-shirt">Out Of Your Head - T-shirt</option>
@@ -46,8 +46,8 @@
                     </select>
                 </div>
                 <div class="forminput">
-                    <label class="formitemname"> Colour: </label>
-                    <select name="colour" class="formdesign">
+                    <label for="colour-label" class="formitemname"> Colour: </label>
+                    <select name="colour" id="colour-label" class="formdesign">
                         <option disabled selected value="">Choose your colour</option>
                         <option value="Black">Black</option>
                         <option value="White">White</option>
@@ -56,8 +56,8 @@
                     </select>
                 </div>
                 <div class="forminput">
-                    <label class="formitemname"> Size: </label>
-                    <select name="size" class="formdesign">
+                    <label for="size-label" class="formitemname"> Size: </label>
+                    <select name="size" id="size-label" class="formdesign">
                         <option disabled selected value="">Choose your size</option>
                         <option value="Extra small">Extra Small</option>
                         <option value="Small">Small</option>
@@ -75,8 +75,8 @@
                 </div>
                 <span id="checkedFrontBack"></span>
                 <div class="forminput">
-                    <label class="formitemname">Fitting Style: </label>
-                    <select name="fitting" class="formdesign">
+                    <label for="fitting-label" class="formitemname">Fitting Style: </label>
+                    <select id="fitting-label" name="fitting" class="formdesign">
                         <option disabled selected value="">Choose your fitting</option>
                         <option value="Stretch">Slim fit stretch</option>
                         <option value="Regular">Regular fit</option>
@@ -139,8 +139,8 @@
                            placeholder="Antwerp">
                 </div>
                 <div class="forminput">
-                    <label class="formitemname">Country: </label>
-                    <select name="country" class="formdesign">
+                    <label for="country-label" class="formitemname">Country: </label>
+                    <select id="country-label" name="country" class="formdesign">
                         <option disabled selected value="">select country</option>
                         <option value="BE">Belgium</option>
                         <option value="NL">Netherlands</option>
@@ -161,8 +161,9 @@
                     <input id="email" type="email" name="email" class="formdesign" required minlength="18"
                            maxlength="50"
                            placeholder="carl.cox@student.kdg.be">
+                    <span id="errorMail"></span>
                 </div>
-                <span id="errorMail"></span>
+
                 <div class="forminput">
                     <label for="tel" class="formitemname">Phone number:</label>
                     <input id="tel" type="tel" name="phonenumber" class="formdesign" required placeholder="0485557819"

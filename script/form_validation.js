@@ -64,7 +64,7 @@ function validateEmail(){
 
 
 function submit(event){
-    let feedback = document.getElementById("errorsubmit");
+    let feedback = document.getElementById("submit");
     if(!validateFullName() || !validateEmail()){
         event.preventDefault();
         feedback.innerHTML = "⚠️ Please check your name and/or e-mail.";

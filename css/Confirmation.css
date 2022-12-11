@@ -55,3 +55,7 @@ h3{
     box-sizing: border-box;
     display: block;
 }
+
+span{
+    display: flex;
+}

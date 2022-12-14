@@ -20,10 +20,10 @@ function init(){
     console.log(productname);
 
     // create span element
-    let newspan = document.createElement('span');
-    newspan.setAttribute('id', 'productInfo');
+    let newarticle = document.createElement('article');
+    newarticle.setAttribute('id', 'productInfo');
     let main = document.querySelector('main');
-    main.insertAdjacentElement('beforeend', newspan);
+    main.insertAdjacentElement('beforeend', newarticle);
 
     //Build Product Info
     showChoice(productname);
@@ -33,13 +33,13 @@ function init(){
 
 function showChoice(productname){
     let producttitle = `<h2>Product Info</h2>`
-    let productnamevalue = `<p>Product name: ${products[productname].name}</p>`
     let productimg = `<img src="${products[productname].img}" alt="${products[productname].name}">`
-    let productcategory = `<p>Category: ${products[productname].category}</p>`
-    let productprice = `<p>Price: ${products[productname].price}</p>`
-    let productcolour = `<p>Colour: ${products[productname].colour}</p>`
-    let productdescr = `<p>Description: ${products[productname].description}</p>`
-    let productlink = `<p>Product link: <a href=${products[productname].productdetail}> ${products[productname].name}</a></p>`
+    let productnamevalue = `<ul class="productInfoList">Product name: <li>${products[productname].name}</li> </ul>`
+    let productcategory = `<ul class="productInfoList">Category: <li> ${products[productname].category}</li></ul> `
+    let productprice = `<ul class="productInfoList">Price: <li>${products[productname].price} EUR</li></ul>`
+    let productcolour = `<ul class="productInfoList">Colour: <li>${products[productname].colour}</li></ul>`
+    let productdescr = `<ul class="productInfoList">Description: <li>${products[productname].description}</li></ul>`
+
 
     let productInfo = document.querySelector('#productInfo');
     productInfo.innerHTML += producttitle;
@@ -49,5 +49,10 @@ function showChoice(productname){
     productInfo.innerHTML += productprice;
     productInfo.innerHTML += productcolour;
     productInfo.innerHTML += productdescr;
-    productInfo.innerHTML += productlink;
+
+    if(products[productname].productdetail === ""){
+        return 0}
+    else{
+        let productlink = `<ul class="productInfoList">Product link: <li></li><a href="${products[productname].productdetail}">${products[productname].name}</a></li></ul>`
+        productInfo.innerHTML += productlink}
 }

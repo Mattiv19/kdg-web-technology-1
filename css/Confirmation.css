@@ -82,18 +82,33 @@ h3{
     width: 30%;
 }
 
-#productInfo > p{
+.productInfoList{
+    list-style-type: none;
     display: flex;
+    color: var(--cultured);
+    width: 100%;
+    line-height: 2;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 100px;
+
+}
+
+.productInfoList > li{
+    padding-left: 17px;
+}
+
+.productInfoList > a{
+    color: var(--ligth-canary);
+}
+
+#productInfo > p{
     color: var(--cultured);
     width: 100%;
     line-height: 2;
     justify-content: center;
     margin-left: 100px;
     margin-right: 90px;
-}
-
-#productInfo > p > a{
-    color: var(--ligth-canary);
 }
 
 

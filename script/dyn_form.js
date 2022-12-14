@@ -13,7 +13,7 @@ function fillSelectOptions(){
         let optionGroup = `<optgroup label="${categoryArray[i].Category}"></optgroup>`
         productOptions.innerHTML += optionGroup;
         for(let j = 0; j < products.length; j++){
-            if(products[j].id === categoryArray[i].id){
+            if(products[j].categoryId === categoryArray[i].categoryId){
             let option = `<option value="${products[j].name}">${products[j].name}</option>`;
             productOptions.innerHTML += option;
             }

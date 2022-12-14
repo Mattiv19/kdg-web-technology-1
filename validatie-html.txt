@@ -1,1 +1,0 @@
-"file:/Users/mattiv/WebstormProjects/matthias.vermeiren/./html/Customization.html":112.21-113.44: info warning: The “date” input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.

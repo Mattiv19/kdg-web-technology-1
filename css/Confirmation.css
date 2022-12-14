@@ -20,7 +20,7 @@ main{
 }
 
 /* styling title overview */
-#titleOverview{
+#titleOverview {
     color: var(--cultured);
     font-size: 1.7rem;
     margin-bottom: 10px;
@@ -56,6 +56,45 @@ h3{
     display: block;
 }
 
-span{
+#productInfo{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: var(--eerie-black);
+    max-width: 50em;
+    margin:10px auto 80px auto;
+    padding: 3.5rem;
 }
+
+#productInfo > h2{
+    color: var(--canary);
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#productInfo > img{
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#productInfo > p{
+    display: flex;
+    color: var(--cultured);
+    width: 100%;
+    line-height: 2;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 90px;
+}
+
+#productInfo > p > a{
+    color: var(--ligth-canary);
+}
+
+
+

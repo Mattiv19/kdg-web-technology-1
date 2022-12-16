@@ -82,34 +82,31 @@ h3{
     width: 30%;
 }
 
-.productInfoList{
-    list-style-type: none;
+dl{
     display: flex;
-    color: var(--cultured);
-    width: 100%;
-    line-height: 2;
-    justify-content: center;
-    margin-left: 70px;
+    flex-flow: row wrap;
+    margin-left: 130px;
     margin-right: 100px;
+}
+
+.productInfoList{
+    flex-basis: 20%;
+    color: var(--cultured);
+    line-height: 3;
+    padding: 0.4rem;
 
 }
 
-.productInfoList > li{
-    padding-left: 17px;
+dd{
+    flex-basis: 60%;
+    flex-grow: 1;
+    color: var(--cultured);
+    padding: 0.4rem;
+    margin-top: 20px;
 }
 
-.productInfoList > a{
+
+a{
     color: var(--ligth-canary);
 }
-
-#productInfo > p{
-    color: var(--cultured);
-    width: 100%;
-    line-height: 2;
-    justify-content: center;
-    margin-left: 100px;
-    margin-right: 90px;
-}
-
-
 

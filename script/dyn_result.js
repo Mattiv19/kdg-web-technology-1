@@ -34,25 +34,32 @@ function init(){
 function showChoice(productname){
     let producttitle = `<h2>Product Info</h2>`
     let productimg = `<img src="${products[productname].img}" alt="${products[productname].name}">`
-    let productnamevalue = `<ul class="productInfoList">Product name: <li>${products[productname].name}</li> </ul>`
-    let productcategory = `<ul class="productInfoList">Category: <li> ${products[productname].category}</li></ul> `
-    let productprice = `<ul class="productInfoList">Price: <li>${products[productname].price} EUR</li></ul>`
-    let productcolour = `<ul class="productInfoList">Colour: <li>${products[productname].colour}</li></ul>`
-    let productdescr = `<ul class="productInfoList">Description: <li>${products[productname].description}</li></ul>`
-
 
     let productInfo = document.querySelector('#productInfo');
     productInfo.innerHTML += producttitle;
     productInfo.innerHTML += productimg;
-    productInfo.innerHTML += productnamevalue;
-    productInfo.innerHTML += productcategory;
-    productInfo.innerHTML += productprice;
-    productInfo.innerHTML += productcolour;
-    productInfo.innerHTML += productdescr;
 
     if(products[productname].productdetail === ""){
-        return 0}
+        let productdatalist = `<dl>
+                            <dt class="productInfoList">Product:</dt> <dd>${products[productname].name}</dd>
+                            <dt class="productInfoList">Category:</dt> <dd> ${products[productname].category}</dd>
+                            <dt class="productInfoList">Price: </dt><dd>${products[productname].price} EUR</dd>
+                            <dt class="productInfoList">Colour: </dt><dd>${products[productname].colour}</dd>
+                            <dt class="productInfoList">Description: </dt><dd>${products[productname].description}</dd>
+                               </dl>`
+        productInfo.innerHTML += productdatalist;
+    }
     else{
-        let productlink = `<ul class="productInfoList">Product link: <li></li><a href="${products[productname].productdetail}">${products[productname].name}</a></li></ul>`
-        productInfo.innerHTML += productlink}
+        let productdatalistwithlink = `<dl>
+                            <dt class="productInfoList">Product:</dt> <dd>${products[productname].name}</dd>
+                            <dt class="productInfoList">Category:</dt> <dd> ${products[productname].category}</dd>
+                            <dt class="productInfoList">Price: </dt><dd>${products[productname].price} EUR</dd>
+                            <dt class="productInfoList">Colour: </dt><dd>${products[productname].colour}</dd>
+                            <dt class="productInfoList">Description: </dt><dd>${products[productname].description}</dd>
+                            <dt class="productInfoList">Link: </dt><dd><a href="${products[productname].productdetail}">${products[productname].name}</a></dd>
+                               </dl>`
+        productInfo.innerHTML += productdatalistwithlink;
+    }
+
 }
+

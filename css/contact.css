@@ -2,9 +2,12 @@
 .gcontacttitle{
     grid-area: contacttitle;
     padding: 20px;
+    justify-self: end;
+    margin-right: 230px;
 }
 .gaddress{
     grid-area: address;
+    justify-self: end;
     padding: 30px;
     margin-top: 15px;
     line-height: 2rem;
@@ -20,10 +23,32 @@
     grid-template-areas:
     "contacttitle maps"
     "address maps";
-    padding: 100px 200px 100px 200px;
+    padding: 100px 200px 280px 200px;
     background: var(--cultured-2);
 }
 
 .gaddress > p a{
     color: var(--eerie-black);
+}
+
+@media all and (max-width: 1560px) {
+    .gridcontact{
+        padding: 100px 100px 280px 100px;
+    }
+}
+
+@media all and (max-width: 1360px) {
+    .gridcontact{
+        padding: 100px 100px 280px 100px;
+    }
+}
+
+@media all and(max-width: 900px){
+    .gridcontact{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "contacttitle"
+        "address"
+        "maps";
+    }
 }

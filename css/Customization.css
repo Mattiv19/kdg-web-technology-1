@@ -115,4 +115,7 @@ span{
 .validvalue{
     background-color: var(--aquamarine);
 }
-/*06d6a0*/
+
+@media screen and(max-width: 750px){
+
+}

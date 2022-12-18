@@ -39,16 +39,39 @@
 
 @media all and (max-width: 1360px) {
     .gridcontact{
-        padding: 100px 100px 280px 100px;
+        padding: 100px 50px 280px 50px;
     }
 }
 
-@media all and(max-width: 900px){
+@media all and (max-width: 1203px){
     .gridcontact{
+        display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
-        "contacttitle"
-        "address"
-        "maps";
+    "contacttitle"
+    "address"
+    "maps";
+        padding: 40px 0 40px 0;
+    }
+
+    .gcontacttitle{
+        justify-self: center;
+    }
+
+    .gaddress{
+        justify-self: center;
+        margin-top: -50px;
+    }
+
+    .gmaps{
+        justify-self: center;
+    }
+
+}
+
+@media all and (max-width: 750px){
+    .gmaps{
+        width: 75%;
     }
 }

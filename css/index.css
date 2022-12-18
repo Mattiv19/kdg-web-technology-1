@@ -112,3 +112,92 @@
     object-fit: contain;
     margin: 50px;
 }
+
+/* responsiveness */
+@media screen and (max-width: 1245px){
+   /* resize to one column */
+    .intro{
+       display: flex;
+       flex-direction: column;
+   }
+
+   .intro h2{
+      text-align: center;
+       flex-wrap: wrap;
+   }
+
+   .intro p{
+       padding: 15px 150px 15px 150px;
+   }
+
+   .intro > a{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 0 0 30px 150px;
+       width: 50%;
+   }
+    /* resize to one column */
+    .gabouttkno{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "aboutwho"
+        "imgwho"
+        "aboutwhy"
+        "imgwhy";
+    }
+    /* center imgs */
+    .gimgwho{
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gimgwhy{
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gaboutwho{
+        padding-left: 0; /* reset padding */
+        padding-bottom: 40px;
+    }
+
+    .gtestimonials{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "title"
+        "review1"
+        "review2"
+        "review3";
+    }
+
+
+}
+
+@media screen and (max-width: 750px){
+    .intro > a{
+        padding: 0 0 25px 0;
+    }
+
+    .intro > h2{
+        font-size: 1.2rem;
+    }
+
+    .intro{
+        padding: 30px 0 70px 0;
+    }
+
+    .gtestimonials{
+        padding: 50px 50px 100px 50px;
+    }
+
+    .gabouttkno{
+        padding: 100px 50px 100px 50px;
+    }
+
+
+}

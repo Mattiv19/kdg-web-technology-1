@@ -35,6 +35,9 @@
      grid-area: productimg;
      padding: 80px 80px 50px 150px; /* placement img */
      filter: drop-shadow(5px 10px 10px var(--gainsboro)); /* styling img */
+     display: block;
+     max-width: 560px;
+     width: 100%;
  }
 .gproductdescr {
     grid-area: productdescr;
@@ -77,7 +80,7 @@
     grid-area: productdetails;
     margin-left: 50px;
 }
-.gmaterialcare {
+.gmaterialcare{
     grid-area: materialcare;
     margin-left: 50px;
 }
@@ -181,3 +184,94 @@ dd {
 .environment h3{
     padding-left: 50px;
 }
+
+/* responsiveness */
+
+@media screen and (max-width: 1500px){
+    .gproductimg{
+        padding: 80px 80px 50px 50px;
+    }
+    .gproductdescr {
+        padding: 0 50px 100px 0;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+    .gmaincontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+    "producttitle producttitle"
+    "productimg productimg"
+    "productdescr productdescr"
+    "specifications specifications"
+    "environment environment";
+    }
+
+
+    .environment{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+    "environmenttext"
+    "environmentimg";
+    }
+    .environment p{
+        padding: 50px;
+    }
+    .genvironmentimg{
+        padding: 50px;
+    }
+
+    .gspecscontainer{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "specstitle"
+        "highlights"
+        "productdetails"
+        "materialcare";
+    }
+
+    .ghighlights {
+        justify-self: left;
+        margin-left: 50px;
+    }
+    .gspecstitle{
+        justify-self: left;
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+    dl{
+        flex-flow: row wrap;
+    }
+    dt{
+        flex-basis:20%;
+        padding: 0.5rem;
+        margin-right: 5px;
+    }
+    dd {
+        flex-basis: 50%;
+        flex-grow: 1;
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+
+
+
+
+
+    .environment{
+        padding: 50px 20px 50px 20px;
+    }
+    .genvironmentimg{
+        width: 65%;
+    }
+
+}
+

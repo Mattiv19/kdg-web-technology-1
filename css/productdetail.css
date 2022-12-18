@@ -124,7 +124,7 @@ dd {
     text-align: center;
     border: solid;
     border-radius: 4px;
-    margin: 0 10px 0 10px;
+    margin: 0 9px 0 9px;
 
 }
 
@@ -189,15 +189,20 @@ dd {
 
 @media screen and (max-width: 1500px){
     .gproductimg{
-        padding: 80px 80px 50px 50px;
+        padding: 80px 200px 50px 50px;
+
     }
     .gproductdescr {
         padding: 0 50px 100px 0;
+        margin-left: 30px;
+    }
+    .gproducttitle{
+        margin-left: 30px;
     }
 
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1200px){
     .gmaincontainer{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -210,6 +215,18 @@ dd {
     "environment environment";
     }
 
+    .gproducttitle{
+        padding-left: 50px;
+        margin-bottom:-20px;
+    }
+    .gproductdescr{
+        padding-left: 50px;
+    }
+
+    .gproductimg{
+        padding-left: 80px;
+
+    }
 
     .environment{
         grid-template-columns: 1fr;
@@ -246,6 +263,10 @@ dd {
 }
 
 @media screen and (max-width: 750px){
+    .gproductimg{
+        width: 70%;
+    }
+
     dl{
         flex-flow: row wrap;
     }
@@ -260,11 +281,6 @@ dd {
         margin: 0;
         padding: 0.5rem;
     }
-
-
-
-
-
 
     .environment{
         padding: 50px 20px 50px 20px;

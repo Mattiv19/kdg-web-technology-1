@@ -81,7 +81,6 @@
                         <label><input type="checkbox" name="printback" value="Back" id="back">Print Back</label>
                     </div>
                 </div>
-                <span id="checkedFrontBack"></span>
                 <div class="forminput">
                     <label for="fitting-label" class="formitemname">Fitting Style: </label>
                     <select id="fitting-label" name="fitting" class="formdesign">
@@ -112,7 +111,7 @@
                     <input id="fullname" type="text" name="fullname" class="formdesign" required minlength="2"
                            maxlength="50"
                            placeholder="Full name - e.g. Charlotte de Witte">
-                    <span id="errorFullName"></span>
+                    <span class="errormsg" id="errorFullName"></span>
                 </div>
 
                 <div class="forminput">
@@ -169,7 +168,7 @@
                     <input id="email" type="email" name="email" class="formdesign" required minlength="18"
                            maxlength="50"
                            placeholder="carl.cox@student.kdg.be">
-                    <span id="errorMail"></span>
+                    <span class="errormsg" id="errorMail"></span>
                 </div>
 
                 <div class="forminput">
@@ -179,7 +178,7 @@
                 </div>
             </fieldset>
             <input type="submit" class="button" value="Submit">
-            <span id="submit"></span>
+            <span class="errormsg" id="submit"></span>
         </form>
     </section>
 </main>

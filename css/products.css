@@ -94,12 +94,6 @@ label:hover{
 
 /* responsiveness products */
 
-@media screen and (max-width: 750px){
-    header{
-        margin-bottom:50px;
-    }
-}
-
 @media screen and (max-width: 1700px){
     .products {
         padding-left: 100px;

@@ -98,7 +98,7 @@ main{
 
 
 /* error messages */
-span{
+.errormsg{
     color: #ef233c;
     font-size: 0.9rem;
     padding-bottom: 15px;
@@ -114,8 +114,4 @@ span{
 /* colour input field when valid */
 .validvalue{
     background-color: var(--aquamarine);
-}
-
-@media screen and(max-width: 750px){
-
 }

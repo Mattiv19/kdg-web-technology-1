@@ -262,6 +262,7 @@ dd {
 
 }
 
+/* responsiveness */
 @media screen and (max-width: 750px){
     .gproductimg{
         width: 70%;

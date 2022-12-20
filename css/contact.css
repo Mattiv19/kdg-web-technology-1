@@ -14,7 +14,7 @@
 }
 .gmaps{
     grid-area: maps;
-    padding: 50px;
+    padding: 50px 30px 50px 30px;
 }
 .gridcontact{
     display: grid;
@@ -23,7 +23,7 @@
     grid-template-areas:
     "contacttitle maps"
     "address maps";
-    padding: 100px 200px 280px 200px;
+    padding: 100px 100px 280px 100px;
     background: var(--cultured-2);
 }
 
@@ -31,19 +31,15 @@
     color: var(--eerie-black);
 }
 
-@media all and (max-width: 1560px) {
-    .gridcontact{
-        padding: 100px 100px 280px 100px;
-    }
-}
+/* responsiveness */
 
-@media all and (max-width: 1360px) {
+@media all and (max-width: 1300px) {
     .gridcontact{
         padding: 100px 50px 280px 50px;
     }
 }
 
-@media all and (max-width: 1203px){
+@media all and (max-width: 1200px){
     .gridcontact{
         display: grid;
         grid-template-columns: 1fr;

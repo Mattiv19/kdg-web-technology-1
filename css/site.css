@@ -160,6 +160,7 @@ h4 {
 }
 
 
+/* responsiveness */
 @media all and (max-width: 750px){
     /* hamburger menu */
     .menu-nav{

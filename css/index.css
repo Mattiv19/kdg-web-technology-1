@@ -114,7 +114,7 @@
 }
 
 /* responsiveness */
-@media screen and (max-width: 1245px){
+@media screen and (max-width: 1300px){
    /* resize to one column */
     .intro{
        display: flex;
@@ -192,11 +192,11 @@
     }
 
     .gtestimonials{
-        padding: 50px 50px 100px 50px;
+        padding: 50px 48px 100px 48px;
     }
 
     .gabouttkno{
-        padding: 100px 50px 100px 50px;
+        padding: 100px 48px 100px 48px;
     }
 
 

@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-left: 200px;
-    padding-right: 150px;
+    padding-left: 100px;
+    padding-right: 50px;
     background:var(--cultured) ;
 }
 
@@ -94,12 +94,6 @@ label:hover{
 
 /* responsiveness products */
 
-@media screen and (max-width: 1700px){
-    .products {
-        padding-left: 100px;
-        padding-right: 50px;
-    }
-}
 
 @media screen and (max-width: 1500px){
     .singleproduct{
@@ -107,7 +101,7 @@ label:hover{
     }
 }
 
-@media screen and (max-width: 1290px){
+@media screen and (max-width: 1300px){
     .singleproduct{
         padding: 10px 50px 20px 50px;
     }

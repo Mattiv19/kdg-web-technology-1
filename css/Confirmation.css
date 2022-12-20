@@ -7,7 +7,7 @@ main{
 .confirmation{
     max-width: 50em;
     margin: 10px auto;
-    padding: 20px 350px 20px 350px;
+    padding: 20px 150px 20px 150px;
     line-height: 2;
 }
 
@@ -56,10 +56,10 @@ h3{
     display: block;
 }
 
+/* productInfo styling */
 #productInfo{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     background: var(--eerie-black);
     max-width: 50em;
     margin:10px auto 80px auto;
@@ -108,4 +108,27 @@ dd{
 
 a{
     color: var(--ligth-canary);
+}
+
+/* responsiveness */
+@media screen and (max-width: 750px) {
+    .confirmation{
+        padding: 20px 75px 20px 75px;
+        line-height: 2;
+    }
+
+    dl{
+        margin-left: 30px;
+        margin-right: 0;
+    }
+    .productInfoList{
+        padding: 0.3rem;
+
+    }
+
+    dd{
+        flex-basis: 55%;
+        padding: 0.3rem;
+    }
+
 }

@@ -217,14 +217,14 @@ dd {
 
     .gproducttitle{
         padding-left: 50px;
-        margin-bottom:-20px;
     }
     .gproductdescr{
         padding-left: 50px;
     }
 
     .gproductimg{
-        padding-left: 80px;
+        padding: 20px 80px;
+        margin: 0 auto;
 
     }
 
